@@ -119,8 +119,8 @@ const Index = () => {
                         </div>
 
                         <div className="flex gap-4">
-                            <button onClick={() => setShow(true)} className="py-2 w-[80px] text-center bg-teal-700 text-white transition-all hover:bg-teal-500 rounded-[5px] font-medium">Sign In</button>
-                            <button className="py-2 w-[80px] text-center bg-purple-700 text-white transition-all hover:bg-purple-500 rounded-[5px] font-medium">Sign Up</button>
+                            <button onClick={() => {setShow(true); setType('signin');}} className="py-2 w-[80px] text-center bg-teal-700 text-white transition-all hover:bg-teal-500 rounded-[5px] font-medium">Sign In</button>
+                            <button className="py-2 w-[80px] text-center bg-purple-700 text-white transition-all hover:bg-purple-500 rounded-[5px] font-medium" onClick={() => {setShow(true); setType('signup');}}>Sign Up</button>
                         </div>
                             </div>
                                 </div>
@@ -129,7 +129,7 @@ const Index = () => {
                 <div className="py-[170px] flex justify-center items-center flex-col gap-6">
                         <h2 className="text-5xl text-[#c7c5c5]">What you will design today?</h2>
                         <span className="text-[#aca9a9] text-2xl font-medium">Canva makes it easy to create and share professional designs</span>
-                        <button className="py-2 w-[200px] text-center bg-purple-700 text-white transition-all hover:bg-purple-500 rounded-[5px] font-medium">SignUp for Free</button>
+                        <button className="py-2 w-[200px] text-center bg-purple-700 text-white transition-all hover:bg-purple-500 rounded-[5px] font-medium" onClick={() => {setShow(true); setType('signup');}}>SignUp for Free</button>
                 </div>
             </div>
         </div>
